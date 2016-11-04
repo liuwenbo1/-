@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-orientation" content="portrait">
+    <title>读书档案</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/iscoll.css"/>
+    <link type="text/css" rel="stylesheet" href="css/archives.css"/>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/zepto.js"></script>
+    <script type="text/javascript" src="js/vendor/iscroll.js"></script>
+    <script type="text/javascript" src="js/archives.js"></script>
+</head>
+<body>
+<!--左侧划出的菜单开始-->
+<ul class="archivesLfHide J_archivesLfHide">
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_search.html">经典导读</a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_newdoc.html">建档</a>
+            </div>
+
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_archives.html">查档</a>
+            </div>
+
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="we.html">关于我们</a>
+            </div>
+
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_personal.html">个人中心</a>
+            </div>
+
+        </div>
+    </li>
+</ul>
+<!--左侧划出的菜单结束-->
+<!---->
+<div class="archivesP">
+    <!--大标题开始-->
+    <div class="arTitle">
+        <div class="arTitleTp">
+            <div class="titleWord">
+                <h3>祖国的小花蕾</h3>
+                <div class="tLevelNum">v3</div>
+            </div>
+            <!-- 标题右侧的菜单按钮-->
+            <div class="returnBtn AmenuBtn">
+                <img src="images/menuBtn.png" alt=""/>
+            </div>
+        </div>
+        <div class="arTitleShadow"></div>
+    </div>
+    <!--大标题结束-->
+    <!--级别-->
+    <div class="level">
+        <!-- 人物头像-->
+        <div class="headPortrait">
+            <div class="headBoxShadow"></div>
+            <img src="images/resource/headPortraitImg.png" alt=""/>
+        </div>
+        <!--人物头像-->
+        <!-- 右侧的级别详情-->
+        <ul class="levelDetail">
+            <li>
+                <p>我的级别是：</p>
+                <!-- 红心-->
+                <div class="heart">
+                    <div><img src="images/heartLevel.png" alt=""/></div>
+                    <div><img src="images/heartLevel.png" alt=""/></div>
+                    <div><img src="images/heartLevel.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                到目前为止读6本书，888字
+            </li>
+            <li>
+                <div class="levelNum">
+                    v3
+                </div>
+                <div class="progressBar">
+                    <!-- 进度条根据后台数据修改width 即可-->
+                    <div class="progressBarNum" style="width:70%;">
+
+                    </div>
+                </div>
+                <div class="levelNum">
+                    v4
+                </div>
+            </li>
+            <li>
+                距离下一级别还差666字
+            </li>
+        </ul>
+    </div>
+    <!--档案书籍列表-->
+    <div class="bookList">
+        <!-- 年份按钮-->
+        <div class="bookListYear J_bookListYear">
+            <ul class="bookListYear_ul">
+                <li class="yearBtnBlue active">
+                    2016年
+                </li>
+                <li class="yearBtnBlue">
+                    2015年
+                </li>
+            </ul>
+            <dl class="yearBtnCreate">
+                <dd><a href="boy_newdoc.html">建档</a></dd>
+            </dl>
+        </div>    
+        <!-- 具体每日展示的数据-->
+        <div class="bookListMonth">
+            <div class="bookListCnt">
+                <!-- 这个是切背景平铺的 无数据-->
+                <ul class="bookListYearCnt J_bookListYearCnt">
+                    <li class="bookListYearCntLi active">
+                        <!--一天的展示数据-->
+                        <ul class="bookListPUl J_bookListJson">
+                            <!--这里加载 上划的数据-->
+                            <li>
+                                <div class="monthDateBtn">
+                                    03月16日
+                                </div>
+                                <!-- 一本书的列表-->
+                                <ul class="oneBookList">
+                                    <li><a href="boy_archives_info.html">
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                            <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div></a>
+                                    </li>
+                                </ul>
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>                                                              
+                            </li>
+                            <li>
+                                <div class="monthDateBtn">
+                                    03月16日
+                                </div>
+                                <!-- 一本书的列表-->
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="monthDateBtn">
+                                    03月16日
+                                </div>
+                                <!-- 一本书的列表-->
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bookListYearCntLi">
+                        <!--一天的展示数据-->
+                        <ul class="bookListPUl J_bookListJson">
+                            <!--这里加载 上划的数据-->
+                            <li>
+                                <div class="monthDateBtn">
+                                    03月17日
+                                </div>
+                                <!--一本书的列表-->
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="monthDateBtn">
+                                    03月17日
+                                </div>
+                                <!-- 一本书的列表-->
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="oneBookList">
+                                    <li>
+                                        <div class="bookImg">
+                                            <img src="images/bookImg1.gif" alt=""/>
+                                        </div>
+                                        <div class="bookDetail">
+                                            <div class="bookName">
+                                                鼠胆神威鼠胆神威
+                                            </div>
+                                           <p>
+                                                <span>三年级</span>
+                                                <span>历史</span>
+                                                <span>文学</span>
+                                            </p>
+                                            <div class="fiveStar">
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-normal.png" alt=""/>
+                                                <img src="images/star-pararet.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>                                                                
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下面的背景平铺的无数据-->
+            <div class="bookListBm"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

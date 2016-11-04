@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>男孩版建档页面</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/iscoll.css"/>
+    <link type="text/css" rel="stylesheet" href="css/archives.css"/>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/zepto.js"></script>
+    <script type="text/javascript" src="js/vendor/iscroll.js"></script>
+    <script type="text/javascript" src="js/archives.js"></script>
+</head>
+<body>
+<!--左侧划出的菜单开始-->
+<ul class="archivesLfHide J_archivesLfHide">
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_search.html">经典导读</a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_newdoc.html">建档</a>
+            </div>
+
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_archives.html">查档</a>
+            </div>
+
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="we.html">关于我们</a>
+            </div>
+
+        </div>
+    </li>
+    <li>
+        <div class="leftWord">
+            <div class="leftwordCn">
+                <a href="boy_personal.html">个人中心</a>
+            </div>
+
+        </div>
+    </li>
+</ul>
+<!--左侧划出的菜单结束-->
+
+
+<div class="archivesP">
+    <!--大标题开始-->
+    <div class="arTitle">
+        <div class="arTitleTp">
+            <div class="titleWord">
+                <h3>祖国的小花蕾</h3>
+                <div class="tLevelNum">v3</div>
+            </div>
+            <!-- 标题右侧的菜单按钮-->
+            <div class="returnBtn AmenuBtn">
+                <img src="images/menuBtn.png" alt=""/>
+            </div>
+        </div>
+        <div class="arTitleShadow"></div>
+    </div>
+    <!--大标题结束-->
+    <div class="bookList newdoc">
+        <div class="bookListMonth bookListMonthA">
+            <!--页面变矮时的遮挡层-->
+            <ul class="bookListYear J_bookListYear"><div>新建档案</div></ul>
+            <div class="conwrap">
+                <!--中间主要-->
+                <div class="introduct_middlem" style="margin-top:10px;">
+                <div class="gainH">
+                    <div class="prompt"></div>
+                    <div class="newdocMain1">
+                        <ul class="newdocMain1_ul">
+                            <li class="nM_photo">
+                                <h4>封面</h4>
+                                <div class="nMp_img">
+                                    <img src="images/pic-none.png" alt=""/>
+                                </div>
+                                <div class="nMp_a_wrp">
+                                    <a class="nMp_a" href="#"><img src="images/boy_rechargeselffm.png"></a>
+                                </div>                                
+                            </li>
+                            <li class="nM_line"></li>
+                            <li class="nM_name">
+                                <h4><i>*</i>书名</h4>
+                                <input type="text" class="key" id="bookName" maxlength="20" placeholder="请输入书名,书名为必填项！">
+                            </li>
+                            <li class="nM_author">
+                                <div class="nMa_i">
+                                    <h4>作者</h4>
+                                    <input type="text" class="key" placeholder="请输入作者名">                                    
+                                </div>
+                                <div class="nMa_i">
+                                    <h4>字数</h4>
+                                    <input type="text" class="key" placeholder="请输入数字" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" >                                    
+                                </div>                               
+                            </li>
+                            <li class="nM_star">
+                                <h4>推荐 </h4>
+                                <div class="imgpa_lev bl_4"></div>
+                            </li>                          
+                        </ul>
+                    </div>
+                    <div class="newdocMain2">
+                        <a class="little">
+                            <span>内容简介</span>
+                        </a>
+                        <textarea class="nM2_area key" placeholder="请输入文字"></textarea>
+                        <div class="nM2_line"></div>
+                         <!--音频  -->
+                         <div class="nM2_audio">
+                              <div class="nM2a_listen">
+                                 <div class="audio_bar" id="audio_bar"></div>
+                                 <a href="javascript:void(0);" class="audiob">
+                                    <span></span><i class="i_audio">点击录音</i>
+                                 </a>
+                             </div>
+                             <div class="nM2a_btn">
+                                 <a href="javascript:void(0);" class="a_record"><img src="images/b_dtaping.png"></a>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="newdocBtn">
+                        <a href="javascript:void(0);" class="a_newD">建立</a>
+                    </div>
+                </div>    
+                </div>
+            </div>
+            <div class="bookListBm"></div>
+        </div>
+    </div>
+</div>
+<div class='lock flex flex-v flex-align-center flex-pack-center'><div class='lock_bg'></div> <p class='lock_txt'>竖屏查看效果更好哦！</p></div>
+<audio src="media/audio/aa.mp3" class="D_audio" id="D_audio"></audio>
+</body>
+<script type="text/javascript" src="js/audio.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+
+
+/*动态添加语音录音中的弹出层*/
+if($('.a_record')){
+    var html = '<div class="pop_video"><i class="icon_pv"></i><p>录音中...</p></div>';
+    $('body').append(html);  
+}
+
+var flag = 0;
+$('.a_record').click(function(){
+    if(flag==0){
+        $('.i_audio').text('录音中...');
+        $('.pop_video').show();
+        $(this).find('img').attr('src','images/b_stop.png');
+        flag=1;
+    }else{
+        $('.i_audio').text('点击播放');
+        $('.pop_video').hide();
+        $(this).find('img').attr('src','images/b_dtaping.png');
+        flag = 0;
+    }  
+});
+
+
+
+
+
+$('.a_newD').click(function(){
+    var n = $('#bookName').val().trim();
+    //检验完必填项
+    if(n.length==0 || n==null ){
+        $('.prompt').html('书名为必填项！').show();
+        setTimeout(function(){
+            $('.prompt').html('').hide();
+        },3000);
+    }else{
+    //这里加载上传信息资料的方法 
+    }
+});
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
