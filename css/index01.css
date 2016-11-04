@@ -1,0 +1,553 @@
+*{margin: 0;padding: 0;;font-family: "Microsoft YaHei" ! important;}
+li{text-decoration: none;list-style: none; }
+a{text-align: center;text-decoration: none;color: black;border: none;outline: none;}
+.fl{float: left}
+.fr{float: right}
+ /*滚动条*/
+
+
+body {height:46em ;width: 100% ;scrollbar-face-color: #3070B9;scrollbar-track-color:#4F9CDC;font-size:16px; background: url("../images/record-boy/content.jpg")no-repeat;background-size: 100% 100%;overflow: hidden;}
+::-webkit-scrollbar-thumb{background-color: #3070B9 ;}::-webkit-scrollbar{background-color: #3070B9; width: .3em }
+::-webkit-scrollbar-track-piece{background-color: #4F9CDC}
+
+img{border: none}
+button,a{color: white;}
+input{border: none;color: white;}
+
+/*页面主体宽度*/
+    /*.main_body{height:73.046% ;border: 1px solid blue}*/
+    .main{display: block;width: 95%;margin: 0 auto;overflow: hidden;}
+
+/*阅读记录页*/  /*男孩版*/
+
+    .head{height:4.1875em;-webkit-box-flex:11; line-height: 4.1875em; -moz-box-flex:11;background: url("../images/record-boy/boy_headback.png")repeat-x;color: white; ;background-size:100% 100%; overflow: hidden;}
+    /*.head .img{display: inline-block;margin-top: .7em;margin-right:1em;float: right;}*/
+    .head .backimg{display:inline-block;width: 2.2em;height: 2.2em; ;padding-top: .8em;float: right;margin-right: 1.1em;}
+     .backimg .back{width: 2.5em;height: 2.2em}
+    .head span{display:inline-block;margin-left: 1em;margin-top:-.5em;float: left;}
+    .head .art{width: 1.5em;margin-left: 1em;float: left;margin-top: 1.25em}
+    .read-con{;margin-top: -.15em;color: white;}
+    /*.read-content .img1{width: 5.5em;height: 5.5em;margin-top: 2em;float: left;background-size: cover;}*/
+    .user_k{background: url("../images/record-boy/user_kuang.png");background-size:6em 6em;width: 6em;height: 6em;line-height:6em;margin:0 auto;text-align:center;overflow: hidden;float: left;margin-top: 1em;}
+    .user_k img{width: 80%;height:auto;border-radius:.5em;vertical-align: middle;border: .15em solid #82DD4D;margin-left: -.1em}
+    .read-content .progress{margin-top: .9em;color: #064f7d;margin-left: 1em;}
+    /*.read-content{margin-top: -1em}*/
+    .read-content .progress li{margin-top: .6em;}
+    .read-content .progress li:nth-child(1){margin-top: .6em;height: 1.2em;line-height: 1.2em;}
+    /*1*/ .read-content .progress li:nth-child(1) img{ width: .9em;height:.9em;vertical-align: middle;margin-top: -.15em;}
+    .read-content .progress  ul{margin-left: -.25em;}
+
+    .read-content .progress  ul:first-of-type li p{font-size: .8em;color: #215283;}
+    .read-content .progress ul:first-of-type .level{background: linear-gradient(to right,white 50%,#95D0F5);border-radius: .4em;padding-left: .3em;height: 1.2em;line-height: 1.2em}
+
+    .read-content .progress ul:first-of-type li:nth-child(3) span{color: #215283;}
+    /*.read-content .progress ul:first-of-type li:nth-child(3) img{width: 10em;}*/
+    .read-content .progress ul:last-child  li span{float: left;}
+    .read-content .progress ul:last-child  li p span{float: none}
+    .read-content .progress ul:last-child  li span:nth-child(2),.read-content .progress ul:last-child  li span:nth-child(3){margin-left: .2em;}
+    .read-content .progress ul li .progress1 {display: inline-block;}
+
+    /*进度条*/
+    /*1*/ .prgressa{width: 12.1em;  height: 2em;border-radius: .5em;background-color: red;}
+     .progressb{
+         /*display:block;*/
+         width: 11em;
+         height: 1em;
+         border-radius: .5em;background: linear-gradient(to right,#51CBF7 30% ,#F6C407 60%,#3D9EFE 0%);
+     }
+
+
+    .book-info{  background: url('../images/record-boy/book_contback.png');background-size: 22.3em 25.3em;height: 25.3em;
+    ;margin-top: 1em;overflow: hidden;}
+    .book-info li{display: inline-block;height: 2em;text-align: center;border-radius:1em; margin-top: .6em;}
+
+    .book-info ul{text-align: center;background: url('../images/record-boy/book-headback.png');background-size: cover;width: 100%;height: 3em;line-height: 3em}
+    /*.book-info ul li a{display: block;border-radius:1em;background-color: black; }*/
+    .book_date{display:block;border-radius:1em;background: url('../images/record-boy/boy_datebtnblue.png') ;background-size: 4.5em 2em;width: 4.41em;height: 2em;line-height: 2em;}
+    /*.btnnoney{display:block;border-radius:1em;background: url('../images/record-boy/date_btnyellownone.png') ;background-size: 4.5em 2em;width: 4.5em;height: 2em;line-height: 2em;}*/
+
+    .active{display:block;background: url('../images/record-boy/boy_datebtnyellow.png') ;background-size: 4.5em 2em;width: 4.4em;height:2em;line-height: 2em;}
+
+    .book_content{overflow: scroll;padding-bottom: 2em;height: 18.6em;overflow-x:hidden;::-moz-scrollbar-track-color: #e7998f;::-webkit-scrollbar-track-color: #e7998f; border-radius: 1em;}
+    /*1*/.date{;background-color:#6EB4F2;width: 90%;margin:2.5em auto;border-radius: .5em;padding-bottom: .5em;position: relative;}
+
+    /*1*/ .book-bac{background:  #C4E8FE ;width: 95%;margin: 0em auto;overflow:hidden;border-radius: .5em;margin-top: .5em}
+    .book-inner{padding-top:.3em;padding-bottom: 0.2em ;overflow: hidden;width: 95%;margin: 0em auto;}
+    /*.book-inner img:nth-child(1){display: block;margin-left: 1.5em;border: groove red}*/
+    .btn_date { height:3em;width:18.6em;text-align: center;;margin: 0 auto;overflow: hidden}/*width:18.6*/
+
+    .btn_date1 {position:relative;right: 4.65em;}
+    .btn_date2 {position:relative;left:4.65em;}
+
+
+    .book-inner p{margin-top: 1em}
+    .book-inner p:nth-child(1){background: linear-gradient(to right,#3070B9 40%, #B7E3FC 90%);width: 8em}
+    .book-inner p:nth-child(2) img{width: .9em;margin-top: -.5em;margin-left: .2em;}
+    .book-inner p:nth-child(2){margin-left:-0.2em;margin-top: 1em}
+    .book-inner img:nth-child(1){margin-left: 0.5em;max-width: 4em;height: auto;}
+    .book-inner img,.book-inner .book-right{float: left; }
+    .book-right{margin-top: 0em;}
+    .check{float: right;margin-top: 0em;width: 70%;}
+    .check img{width: 80%; margin-top: -1em;float: right;margin-right: 1em;}
+    .loading{margin: 0 auto;width: 100%;text-align: center; margin-bottom:0.5em; display: none; }
+    /*.loading{margin: 0 auto;width: 100%;text-align: center; margin-bottom:-1em; display: none; }*/
+    .loading img{width: 3em;border-radius: 1em;background-color:#4E9CDD;}
+    /*.date .img_a{margin-top: 1em;}*/
+    .date2{margin-top: 0.1em;}
+    .date .img_a{margin-bottom: -.8em;display:block;text-align:center;background:url("../images/record-boy/boy_bookbtnleft.png");background-size:5em 1.7em;height:1.7em;line-height:1.7em;width: 5em;margin-left: .5em;margin-top: -1em;position: relative;top: -.8em;}
+    .date .img_a span{display:block;}
+    .date .a{display:inline;margin-left: 0.85em;margin-top:-1.7em ;}
+    .date .book-right{margin-left: 2em;}
+    .book-right p img{margin-left: .5em}
+    /*1*/ .footer{;position: fixed;margin-left: 1.5em;bottom:1em; }
+    .footer a:nth-child(1) img{width: 6em;height: 3em; float: left;margin-left: 1em}
+    .footer input[type=submit] {;color: white;border-radius:1em;background: url("../images/record-boy/b_dboy_newdoc.png");background-size:7.2em 2.8em;width: 7.2em;line-height:2.8em;float: right;margin-right: 1.8em;padding-bottom: .2em;}
+    .footer input[type=submit]::value{padding-bottom: 1.3em}
+
+/*阅读记录页*/  /*男孩版   结束*/
+
+
+
+
+/*阅读记录页*/  /*女孩版   开始*/
+     /*1*/  .head-g{;z-index:-9999;height: 3.5em;background: url("../images/record-girl/girl_headback.png")repeat-x;color: white;line-height: 3.5em ;background-size:cover; overflow: hidden;}
+     .head-g .back-g{display:block;width: 1.7em;height: 1.7em;float: right;margin-left: 11.3em;margin-top: .8em;background: url("../images/record-girl/girl_headerbtn_right.png") ;background-size: 1.7em 1.7em;}
+
+     .head-g span{margin-left: 1em;float: left;}
+     .head-g .art-g{width: 1.5em;margin-left: .8em;float: left;margin-top: 1.35em}
+     .read-con-g{background: url("../images/record-girl/girl_contentback.png")repeat-x;background-size:cover;height: 40.15em;margin-top: -.15em;color: white;}
+     /*.read-content .img1{width: 5.5em;height: 5.5em;margin-top: 2em;float: left;background-size: cover;}*/
+     .user_k-g{background: url("../images/record-boy/user_kuang.png");background-size:6em 6em;width: 6em;height: 6em;line-height:6em;margin:0 auto;text-align:center;overflow: hidden;float: left;margin-top: 1.9em;}
+     .user_k-g img{width: 80%;height:auto;border-radius:.5em;vertical-align: middle;border: .15em solid #f47075;margin-left: -.1em}
+     .read-content-g .progress-g{margin-top: 1.6em;color: #f47075;margin-left: 1em;}
+     .read-content-g .progress-g li{margin-top: .6em;}
+     .read-content-g .progress-g li:nth-child(1){margin-top: .6em;height: 1.2em;line-height: 1.2em}
+     /*1*/ .read-content-g .progress-g li:nth-child(1) img{ width: .9em;vertical-align: middle;margin-top: -.15em;}
+
+     .read-content-g .progress-g  ul:first-of-type li:nth-child(1) img{height: .9em;}
+     .read-content-g .progress-g ul:first-of-type li p{font-size: .8em;color: #ff666d;}
+     .read-content-g .progress-g ul{margin-left: -.2em}
+     .V_leve-g{color:#F46B71; }
+
+     .read-content-g .progress-g ul:first-of-type .level-g{background: linear-gradient(to right,white 50%,#FEE6DF);border-radius: .4em;padding-left: .3em}
+     .read-content-g .progress-g ul:first-of-type li:nth-child(3) span{color: #F46B71;}
+     .read-content-g .progress-g ul:first-of-type li:nth-child(3) img{width: 10em;}
+     .read-content-g .progress-g ul:last-child  li span{float: left;}
+     .read-content-g .progress-g ul:last-child  li p span{float: none}
+     .read-content-g .progress-g ul:last-child  li span:nth-child(2),.read-content-g .progress-g ul:last-child  li span:nth-child(3){margin-left: .2em;}
+     .read-content-g .progress-g ul li .progress1 {display: inline-block;}
+
+     /*进度条*/
+     /*1*/ .prgressa-g{width: 12.1em;  height: 2em;border-radius: .5em;background-color: red;}
+     .progressb-g{
+         /*display:block;*/
+         width: 11em;
+         height: 1em;
+         border-radius: .5em;background: linear-gradient(to right,#F77E83 30% ,#FFE13D 60%,#E7D5A9 0%);
+     }
+
+
+     .book-info-g{background: url('../images/record-girl/girl_bookcontent.png');background-size: 100% 100%;height: 23.5em;
+     ;margin-top: 1.5em;overflow: hidden;border-radius: 1em;}
+     .book-info-g li{display: inline-block;height: 2em;text-align: center;border-radius:1em; margin-top: .6em;}
+
+     .book-info-g ul{overflow: hidden;text-align: center;background: url('../images/record-girl/girl_book_headback.png');background-size: cover;width: 100%;height: 3em;line-height: 3em}
+     /*.book-info ul li a{display: block;border-radius:1em;background-color: black; }*/
+     .book_date-g{display:block;border-radius:1em;background: url('../images/record-girl/girl_datebtn.png') ;background-size: 4.5em 2em;width: 4.5em;height: 2em;line-height: 2em;}
+     .active-g{display:block;border-radius:1em;background: url('../images/record-girl/girl_dateyellow.png') ;background-size: 4.5em 2em;width: 4.5em;height: 2em;line-height: 2em;}
+
+
+     .book_content-g{overflow: scroll;padding-bottom: 0em;height: 19em;overflow-x:hidden; width: 99%  ;margin-top: 0em}
+
+     .book_content-g{scrollbar-face-color: #f37075;scrollbar-track-color:#fbcfc5;}
+     .book_content-g::-webkit-scrollbar-thumb{background-color: #f37075;}
+     .book_content-g::-webkit-scrollbar-track-piece{background-color: #f8b5b0  }
+
+     .date-g{padding-top: 1em;border: .05em solid white;background-color: #FBC6CF;width: 90%;margin:1.5em auto;border-radius: .5em;padding-bottom: .6em;position: relative;}
+
+      .book-bac-g{background: #ffedf2;width: 95%;margin: 0 auto;overflow:hidden;border-radius: .5em;margin-top: .3em;}
+     .book-inner-g{margin-top: 0em;padding-top:.5em;padding-bottom: .5em ;overflow: hidden;}
+
+     .book-inner-g p{margin-top: 1em}
+     .book-inner-g p:nth-child(1){background: linear-gradient(to right,#F37075 40%,#FEE1DB 80%,white);width: 8em}
+     .book-inner-g p img{width: .8em;margin-top: -.5em;}
+     .book-inner-g p:nth-child(2){margin-left:-0.5em;margin-top: 1em}
+     .book-inner-g img:nth-child(1){margin-left: .8em;max-width: 4em;height: auto;}
+     .book-inner-g img,.book-inner-g .book-right-g{float: left; }
+     .innerA{border-top: none;}
+     .book-right-g{margin-top: -.5em}
+     .loading-g{margin: 0 auto;width: 100%;text-align: center; margin-bottom:0.5em; display: none; }
+     .check-g{float: right;margin-right: 0.7em}
+     .check-g img{width: 4em;;}
+     /*.loading-g img{width: 3em;border-radius: 1em;background-color:#4E9CDD;}*/
+     /*.date .img_a{margin-top: 1em;}*/
+     .date2-g{margin-top: -0.2em;}
+     .date-g .img_a-g{display:block;text-align:center;background:url("../images/record-girl/girl_bookleftbtn.png");background-size:5em 1.7em;height:1.7em;line-height:1.7em;width: 5em;margin-left: .5em;margin-top: -1em;position: absolute;top: .2em;}
+     .date-g .img_a-g span{display:block;}
+     .date-g .a-g{display:inline;margin-left: 0.85em;margin-top:-1.7em ;}
+     .date-g .book-right-g{margin-left: 2em;}
+     .book-right-g p img{margin-left: .5em}
+     /*1*/ .footer-g{bottom:1em;;position: fixed;margin-left: 1em }
+     .footer-g a:nth-child(1) img{width: 6em;height: 3em; float: left;margin-left: 1em}
+     .footer-g a:nth-child(2) img{width: 8em;height: 3em;float: right;margin-right: 1em}
+
+/*阅读记录页 女孩版   结束*/
+
+
+/*建档页面    男孩版   开始*/
+    .contentj{padding-top: 1em; color: white;}
+    .fm_info{padding-top: .3em;background: url("../images/record-boy/b_db_dboy_content1.png");background-size:100% 100%;height:32.5em}
+    .fm_infoinner1{;padding-top:.7em;padding-bottom:.8em;padding-left:.5em;width: 85%;background-color: #6CB4F1;margin: 1.2em auto;border-radius: .5em;overflow: hidden;}
+    .fm_infoinner1 span:nth-child(1){padding-left: .2em;display: block;width: 3.5em;height: 1.5em;line-height:1.5em;background: linear-gradient(to right,#4B8CD2 50%, #6CB4F1 90%)}
+    .fm_infoinner1 .bookimg{text-align:center;margin-left: 0.3em;line-height: 6em;width: 6em;  height: 6em;border:.1em groove ;border-color: white;border-radius: .7em;background-color: #6CB4F1; }
+    .fm_infoinner1 .bookimg img{width: 4em;vertical-align: middle;;}
+
+    .fm_infoinner1 .fm_infoinner1_1 a {margin-left: .9em;}
+    .fm_infoinner1 a{margin-top: 2.25em;}
+    .fm_infoinner1 a img{width: 5.5em;margin-top: 1.1em;margin-left: .5em;}
+    .fm_infoinner1_1{;overflow: hidden; }
+    .fm_infoinner1_1 label{display: inline-block;;margin-top: .3em;padding-left: .2em;width: 2.5em;height: 1.5em;line-height:1.5em;background: linear-gradient(to right,#4B8CD2 50%, #6CB4F1 90%)}
+
+    .fm_infoinner1_1 input{font-size: .9em;display: inline-block;background-color: #3E80C8;height: 1.6em;line-height:1.6em;border-radius: .5em;padding-left: .5em;color: white;}
+    .fm_infoinner1_1-1 {margin-top: .3em}
+
+    .line {border-bottom: .1em solid #367FBC;height: .6em}
+     /*::-webkit-input-placeholder{display: block;font-size: .9em;color: #6ea3d5;margin-top: -.1em;}*/
+     :-moz-placeholder {font-size: .8em;color:#6AA4DE}
+     ::-moz-placeholder {font-size: .8em;color:#6AA4DE}
+
+    textarea::-webkit-input-placeholder{display: inline-block;font-size: .85em;color: #4d86d5;}
+    textarea:-ms-input-placeholder{font-size: .85em;color:#4d86d5}
+    textarea::-moz-placeholder{font-size: .85em;color:#4d86d5}
+    textarea:-moz-placeholder{font-size: .85em;color:#4d86d5}
+    .fmselect {display: block;position: relative;left: 1.1em;}
+     .fm_infoinner1_1 input[placeholder]{font-size: .8em;!important;}
+    .fm_infoinner1_1 #author{width: 7.3em;}
+    .fm_infoinner1_1 .number{display: inline-block;margin-left: 2em;}
+    .fm_infoinner1_1 #number{width: 7.3em;}
+    .fm_infoinner1_1 .Recommend{display: inline-block;height:1.5em ;line-height: 1.5em;width:10em;background: linear-gradient(to right,#4B8CD2 17%, #6CB4F1 25%) }
+    .fm_infoinner1_1 img{display:inline-block;width: 1em;vertical-align: middle;margin-top: -.3em}
+
+    .fm_infoinner2{;z-index: -1;padding-bottom:.8em;padding-left:.5em;width: 85%;background-color: #6CB4F1;margin: -1.4em auto;border-radius: .5em;overflow: hidden;}
+
+    .think1{position: relative;padding:.2em;top:-.7em;left:1.9em;z-index: 10;font-size: .8em;text-align: center;margin-top:-.1em;display: inline-block;background: url("../images/record-boy/book_btnleft.png")no-repeat;background-size: contain;width: 4.5em;height: 1.5em;line-height: 1.5em;}
+    .think {display: inline-block;line-height: 1.5em;font-size: .9em;margin-top: -.2em;}
+    .fm_infoinner2 textarea{padding-left:.5em;margin-left: .1em;font-size: .8em;margin-top:1.1em;display: inline-block;border-top:none;border-left:none;border-right:none;background-color: #6CB4F1;width: 96%;height: 6em;border-bottom: .1em solid #367FBC;z-index: 0}
+    .audio{height: 3em;line-height: 3em;}
+    .audio_inner{color: #3E80C8;padding-left: .3em;display:inline-block;margin-top:1.1em;border-radius: .5em;background-color: #B7E3FD;height: 1.5em;width: 12em;line-height: 1.5em;}
+    .audio_inner a{color: #3E80C8;}
+    .audio_inner img{;width: 2em;vertical-align: text-bottom;margin-right: 1em;}
+    .tape{display: inline-block;height: 1.8em;vertical-align: top;margin-top: 1em;margin-left: 1.9em;}
+    .tape img{display :inline-block;height: 1.5em;width: 2.5em;}
+    .sharet{width: 85%;height: 4em;margin: 0 auto;margin-top: 3.6em;border-radius: .5em;font-size: .8em;}
+    .shareimg{margin-left: 6.4em;}
+    .shareimg div{margin-left: .6em;margin-top: -.6em;text-align: left;}
+    .shareimg img{display: block;height: 1.5em;margin: 0 auto}
+    .sharet p{font-size: .6em;margin-top: .3em;}
+    /*1*/ .footernd{bottom:1em;;position: fixed;margin-left: 2em ;}
+    .footernd a:nth-child(1){background: url("../images/record-boy/b_dboy_menu.png");background-size: 5.1em 2.8em;width: 5.1em;line-height:2.8em;margin-left: 0.8em;}
+    .footernd input[type=submit] {;color: white;border-radius:1em;background: url("../images/record-boy/b_dboy_newdoc.png");background-size:7.2em 3em;height:3em;width: 7.2em;line-height:2.8em;float: right;margin-right: 3.8em}
+    .footernd input[type=submit]::value{margin-top: -.2em}
+    .footernd a:nth-child(1) span{display: block;}
+
+/*建档页面    男孩版   结束*/
+
+
+/*搜索页面 男孩版 开始 */
+
+     .s_search{overflow: hidden;position: relative;height: 2.6em}
+     .s_search input{color: white;padding-left: 1em;background-color: #3D9EFD;border-radius: .9em; vertical-align: top;width: 95%;height: 2.6em;line-height: 2.6em;}
+
+     .s_search input[type=submit]{border: none;outline:none;display: inline-block;background: url("../images/record-boy/s_search.png");background-size:cover;width: 4em;height: 2.2em;margin-right: .3em;position: relative;top: -2.3em}
+     .contents{padding-top: 1em;padding-bottom:1em;background: url("../images/record-boy/content.jpg");background-size:cover;height: 38.1em; color: white;}
+     .select{margin-top: .8em;background: url("../images/record-boy/s_contback.png");background-size:22.38em 27.4em;padding-bottom: 2.2em; }
+     .select .select_header{ border-radius: .5em;background: url("../images/record-boy/s_contheader.png");background-size: contain;height:2.5em }
+
+     .s_search input::-webkit-input-placeholder{display: inline-block;font-size: .9em;color: #A1D7FF;}
+     .s_search input:-moz-placeholder {font-size: .9em;color: #A1D7FF;}
+     .s_search input::-moz-placeholder {font-size: .9em;color: #A1D7FF;}
+     .s_search input:-ms-input-placeholder{font-size: .9em;color: #A1D7FF;}
+     .select_item{padding-top: .8em;width: 92%;margin: 0 auto;}
+     .grade{padding-left: .3em;background: linear-gradient(to right,#346FBC 30%, #4F9CDC 50%)}
+     .grade small{color: #9ED5FC;font-size: .75em;vertical-align: bottom;text-align: center;}
+     .grade_iem{width: 100%;margin: 0 auto ;margin-top: .12em;}
+     .grade_iem a{color:#346FBC;margin-left:.4em;font-size: .9em;;margin-top:.7em;display:inline-block;border-radius:.4em;background: url("../images/record-boy/s_contbtnnormal.png");background-size: cover;width: 5em;height: 2.5em;line-height: 2.5em;border: 1px solid white;}
+     .grade_iem-inner {margin-bottom: .6em;}
+
+
+     .footer_s  {position: relative;margin-left: 1.5em; }
+     .footer_s   a:nth-child(1){background: url("../images/record-boy/b_dboy_menu.png");background-size:100% 100%;width: 6.76em;height: 3.6em;margin-left: 0.8em;}
+     .footer_s   a:nth-child(1) span{display: inline-block;height: 1.5em;margin-top: 1em;margin-left: -.1em}
+     .footer_s   a:nth-child(2) {background: url("../images/record-boy/b_dboy_newdoc.png");background-size:7.2em 2.8em;width: 7.2em;height: 2.8em;float: right;margin-right: 1.2em}
+
+
+
+/*搜索页面 男孩版 结束*/
+
+
+/*充值页面 男孩版 开始  */
+     .read-content .progress ul:first-of-type .level{;border-radius: .4em;padding-left: .3em;height: 1.2em;line-height: 1.2em}
+
+     .flower{font-size: 1.1em}
+     .level_r{padding-top: -.1em;vertical-align: top;}
+     .level_r img{width: .9em;}
+
+     .flower, .level_r, .prince{background: linear-gradient(to right,white 30%,#6CB4F1);width: 13.6em;}
+     .flower{width: 12.4em;}
+     .b_rcontent{;padding-top: 1em;padding-bottom: .9em;margin-top: 1em;background: url("../images/record-boy/boy_rechargeconback.png");background-size: 100% 100%;height: 24em;}
+     .b_rcontentv{border: 2px solid white;padding-top:.6em;width: 91%;height: 8em;background-color: #6cb4f1;border-radius: .5em;margin-left:.8em }
+     .b_rcontentvinner-s{;padding-top:.2em;padding-bottom:.2em;background:url("../images/record-boy/boy_rechargevipback.png");;background-size: 20em 4.9em;width: 96%;height: 4.2em;margin: 0.2em auto;border-radius: .5em}
+     .price{;width: 12em;margin-left:7em ;margin-top:.3em;border-left: .1em solid #89C3E6;color: #6396D0;height: 3.2em;padding-left: .9em;padding-top: .3em;}
+     .price p{margin-top: 0.1em;padding-left: .2em;margin-bottom: .4em}
+     .price p span{margin-top: -.3em;;display: inline-block;width:1.8em;height:1em;font-size: 1.5em;color: #FFFF2F;;margin-bottom: 0;}
+     .price span:nth-child(2){color: white;display: block;margin-top: 0em;background: linear-gradient(to right,#3C79C3 35%, #b4dff1 100%);width: 8em;}
+     .privilege{margin-left: .8em;height: 2.7em;line-height: 2.7em;margin-top: .3em}
+     .privilege label{display: inline-block;margin-top: .2em;padding-top:0;padding-right: .4em;background: linear-gradient(to right,#3C79C3 35%, #63adf1 70%);width: 3em;height: 1.5em;line-height: 1.5em;}
+     .privilege input{padding-left: .5em;; background-color: #3E80C8;border-radius: .5em;height: 1.5em;}
+     .privilege-r{;background: url("../images/record-boy/boy_bookbtnleft.png")no-repeat;background-size: contain;width: 6em;height:2.2em;line-height:2.2em;vertical-align:top;text-align:center;font-size: .8em;position: relative;left: 1.7em;top: .6em;}
+     .privilege-r span{font-size: 1.2em;margin-top: -.2em ;}
+     .b_rcontentv2{margin-top: -.5em;padding-top: 1em;;overflow: auto;height: 9.6em;overflow-x: hidden;::-webkit-scrollbar-track-color:#6CB4F1;::-webkit-scrollbar-track-color:#6CB4F1; scrollbar-base-color:#6CB4F1;}
+
+     .b_rcontentvinner{;width: 92%;margin: 0 auto;color: #104C7E;margin-top: .2em}
+
+     .b_rcontentvinner p:nth-child(2n){font-size: .9em;text-indent: 2em;}
+     .agree{font-size:.8em;height: 3em;line-height: 3em;width: 90%;margin: 0 auto;padding-left: .4em;}
+     .agree img{display:inline-block;vertical-align: text-top; margin-top: -.06em;width: 1.3em;margin-right: .5em;}
+     .agree label{font-size: .95em;color: #B7E3FD}
+     .agree a{margin-top: .4em;margin-left: 4.3em;display:inline-block;background: url("../images/record-boy/boy_rechargecheck.png");background-size: 6em 2.3em ;width: 6em;height: 2.3em;}
+     .agree a span{display:block;font-size: .9em;margin-top: -.2em;}
+
+
+/*充值页面 男孩版 结束  */
+
+/*规则页面 模太框 男孩版*/
+     .modal{width: 24.5em;height: 33.5em;background-color: #48697E;opacity:.93;padding-top: 13em;position: absolute;top:-3em;display: none;}
+     .b_rcontentm{;height: 22em;width: 90%;background-size: 100% 100%; padding-top: 0;padding-bottom: 0.5em}
+
+     .m_head {background: url("../images/record-boy/boy_ruleheadback.png") no-repeat;background-size: 98% 100%;height: 2.5em;line-height: 2.5em;text-align: center;}
+     .m_head span{width: 3em;display:block;font-size: 1.5em;margin-left: 11em;margin-top:-1.5em;color: red}
+     .m_head span img{width: 1.8em;margin-left: 2.8em}
+     .b_rcontentvm{;margin-top: .5em;overflow: auto;height: 17.8em;::-webkit-scrollbar-track-color:#6CB4F1;box-sizing: border-box;color: white;margin-bottom:0em;}
+     .b_rcontentvm p:nth-child(2n){font-size: .9em;text-indent:2em;}
+
+/*规则页面 模太框*  男孩版 结束/
+
+
+/*规则页面 模太框 女孩版 开始*/
+
+     .modal-g {width: 24.5em;height: 33.5em;background-color: #847F7E;opacity:.93;padding-top: 13em;position: absolute;top:-3em;display: none;}
+     .b_rcontent-g{;background: url("../images/record-girl/girlrules_conhead.png");background-size: 100% 100%;height: 22em;width: 90%; padding-top: 0;padding-bottom: 0.2em;margin: 0em auto}
+     .m_head-g  {height: 2.5em;line-height: 2.5em;text-align: center;color: white;}
+     .m_head-g p{margin-left: -.5em;}
+     .m_head-g  span{width: 3em;display:block;font-size: 1.5em;margin-left: 11em;margin-top:-1.5em;color: red}
+     .m_head-g  span img{width: 1.8em;margin-top: .2em;margin-left: 3em;}
+     .b_rcontentvm-g {background-color: #FBCFC5;margin-top: .5em;overflow: auto;height: 17.8em;box-sizing: border-box;color: #B94B55;margin-bottom:0em;padding-left: .6em}
+     .b_rcontentvm-g p:nth-child(2n){text-indent:2em;font-size: .9em}
+     .b_rcontentvm-g{scrollbar-face-color: #f37075 ;scrollbar-track-color:#fbcfc5;}
+     .b_rcontentvm-g::-webkit-scrollbar-thumb{background-color: #f37075 ;}
+     .b_rcontentvm-g::-webkit-scrollbar-track-piece{background-color: #fbcfc5;}
+
+
+/*规则页面 模太框*  女孩版 结束/
+
+
+
+
+
+/*充值成功页面 开始 男孩版 */
+     .read-conch{padding-top: 4em;height: 36.1em;z-index: 9999}
+     .read-contentch{margin: -1em auto;width:90%;overflow: hidden;background: url("../images/record-boy/charge_susconback.png");background-size: 22.2em 25em;height: 25.1em;}
+     .user_kch{margin-left: 2.3em;width: 8em;height: 8em;background-size: cover;}
+     .user_kch img{vertical-align: middle;margin-top: .7em;}
+     .charge-vip{margin-top: 8em}
+     .charge-vip img{width: 11em;margin-left: -.3em;}
+     .progress-ch{padding-top: .1em;padding-bottom: .7em;padding-left: 1.2em;; color:#0E5C79; border-radius: .6em;background-color:#6CB4F1 ;margin:-.3em auto;width: 82%;margin-left: 1.2em}
+     .progress-ch li{margin-top: .5em;width: 16em;padding-left: .3em}
+     .progress-ch li:nth-child(2){font-size: 1em;width: 17.5em;}
+     .progress-ch span{font-size: .9em;margin-left: .8em;}
+     .footer_ch {position: fixed;margin-left: 1.5em ;bottom:2em;}
+     .footer_ch   a:nth-child(1){background: url("../images/record-boy/charge_menu.png");background-size: 6em 2.8em;width: 6em;height: 2.8em;margin-left: 0.8em;}
+     .footer_ch   a:nth-child(1) span{display: inline-block;height: 1.5em;margin-top: .6em}
+     .footer_ch   a:nth-child(2){background: url("../images/record-boy/charge_showonfo.png");background-size: 6em 2.8em;width: 6em;height: 2.8em;margin-left: 0.8em;}
+     .footer_ch   a:nth-child(2) span{display: inline-block;height: 1.5em;margin-top: .6em}
+     .footer_ch   a:nth-child(3) {background: url("../images/record-boy/charge_readnow.png");background-size:6em 2.8em;width: 6em;height: 2.8em;float: right;margin-right: 1.2em}
+     .footer_ch   a:nth-child(3) span{display: inline-block;margin-top: .6em}
+     .charge-middle{;overflow: hidden;width: 10em;text-align: center;margin-top: 8em;}
+     .charge-middle li{display: block;}
+     .charge-middle p{margin-left: 1.5em;color: #fff435;}
+
+
+/*充值成功页面 结束 男孩版*/
+
+
+/*充值成功页面 开始 女孩版 */
+     .bac_g{width: 100%;height: 43.5em;background-color:#837A77 ;z-index:0;overflow: hidden;position: absolute;top:0em;opacity: .7}
+
+     .read-conch-g{padding-top: 3em;height: 37.1em;}
+     .read-contentch-g{width: 90%;border-radius:1em;position: absolute;left: 5.3%;overflow: hidden;background: url("../images/record-girl/girlchargesuccess_content.png");background-size: 22.2em 25.1em;height: 25em;margin: 0em auto}
+     .contentch-g_top{text-align: center;}
+     .contentch-g_top img{width: 98%;position: relative;top: 3.6em;left: 1.1em;}
+     .user_kch-g{margin-left: 2.2em;width: 8em;height: 8em;background-size: cover;margin-bottom: .3em;}
+     .user_kch-g img{vertical-align: middle;margin-top: .7em;}
+     .charge-vip-g{margin-top: 3em;}
+     .charge-vip-g img{width: 11em;margin-left: -.3em;}
+     .progress-ch-g li:nth-child(1){font-size: 1.1em}
+     /*.progress-ch-g li:nth-child(2){font-size: 1.5em;line-height: 1.5em}*/
+
+     .level_r-g{background: linear-gradient(to right,white 30%,#F9C1B3 100% )}
+     .level_r-g img{width: 1.1em;vertical-align: middle;}
+
+     .progress-ch-g{padding-top: .1em;padding-bottom: .7em;padding-left: 1.2em;; color: #F47075; border-radius: .6em;background-color: #f9c1b3;margin:.3em auto;width: 88%;box-sizing: border-box;margin-left: 1.2em}
+     .progress-ch-g li{margin-top: .5em;width: 16em;padding-left: .3em; }
+     .progress-ch-g li:nth-child(2){font-size: 1em;width: 17.5em;}
+     .progress-ch-g span{font-size: .9em;margin-left: 0.8em;}
+     .footer_ch-g {;position: fixed;margin-left: 1.5em ;bottom:2em;}
+     .footer_ch-g   a:nth-child(1){background: url("../images/record-girl/girlsuccsee_btnl.png");background-size: 6em 2.8em;width: 6em;height: 2.8em;margin-left: 0.8em;}
+     .footer_ch-g   a:nth-child(1) span{display: inline-block;height: 1.5em;margin-top: .4em;font-size: 1.2em;}
+     .footer_ch-g   a:nth-child(2){background: url("../images/record-girl/girlsuccsee_btnm.png");background-size: 6em 2.8em;width: 6em;height: 2.8em;margin-left: 0.8em;}
+     .footer_ch-g   a:nth-child(2) span{display: inline-block;height: 1.5em;margin-top: .4em;font-size: 1.2em;}
+     .footer_ch-g   a:nth-child(3) {background: url("../images/record-girl/girlsuccsee_btnr.png");background-size:6em 2.8em;width: 6em;height: 2.8em;float: right;margin-right: 1.4em}
+     .footer_ch-g   a:nth-child(3) span{display: inline-block;margin-top: .4em;font-size: 1.2em;}
+     .charge-middle-g{;overflow: hidden;width: 10em;text-align: center;margin-top: 2em;}
+     .charge-middle-g li{display: block;}
+     .charge-middle-g p{display: block;margin-left: 1.8em;color: #fff435;}
+
+/*充值成功页面 结束 nv孩版*/
+
+
+
+/*书单页面 开始 男孩版*/
+     /*.kong_1{  }*/
+
+     .book_list-content{margin-top: .5em;padding-bottom:1em;box-sizing:border-box;padding-top:1em;overflow: hidden;;background: url("../images/record-boy/book_listcontentback.png")no-repeat;background-size: 100% 100%;height: 36.07em;}
+     .book-listcontain{padding-bottom: .6em;background-color: #85d1f1;padding-top: .2em;max-height: 96.5%;overflow: auto;border-radius: .7em;width: 90%;margin-left:.85em;}
+     .inner-li{margin: 0 auto;margin-top: .5em;padding-top: .3em;border-radius: .5em;width: 95%;background-color: #B7E3FD;margin-left: 0.5em;}
+     .inner-li img:nth-child(1){margin-left: .8em;}
+     .inner-li .book-right-li{margin-left: .6em;margin-top: 0em;}
+     .footer_l {position: relative; ;margin-top: .75em;}
+     /*.kong_2{ -webkit-box-flex:3.7;  -moz-box-flex:3.7;border: 1px solid greenyellow}*/
+     /*.kong_3{-webkit-box-flex:2.4;  -moz-box-flex:2.4;}*/
+
+
+/*书单页面 结束 男孩版*/
+
+
+/*选择封面 二级页面 开始 男孩版*/
+
+     .modal_n{width: 26em;z-index:9999;height: 33.5em;background-color: #48697E;opacity:.9;padding-top: 17em;position: absolute;top:-4.4em;}
+     .img_select{background: url("../images/record-boy/cover_content.png");background-size: cover;width: 20em;height: 16.2em;margin: 0 auto;}
+     .img_src{margin-top: 2em;margin-left: 3.0em;;}
+     .img_select input{height:1.5em ;width: 16em;margin-bottom: 1.5em;font-size: .8em;border-radius: .5em;padding-left: .5em;}
+     .img_select img:nth-child(1){width: 2em;margin-right: .9em;margin-top: .4em;margin-bottom:1em; }
+     .img_btn{width: 90%;margin: 0 auto;padding-left: .2em;overflow: hidden;}
+     .img_btn a{display: inline-block;position: relative;margin-top:2em;}
+
+     .img_btn a:nth-child(1){display: block;background:url("../images/record-boy/cover_btnlocal.png") ;background-size: cover;height: 4.5em;width: 9em; margin-top: .5em;font-size: .9em;margin-left: .1em;}
+     .img_btn a:nth-child(1) span{display:block;margin-top: 1.3em;}
+     .img_btn a:nth-child(1) input{display: block;position: absolute;top:0;right:0;;margin-top: .8em;width: 7em;opacity: 0;}
+     .img_btn a:nth-child(2){;display: block;background:url("../images/record-boy/cover_btnself.png") ;background-size: cover;height: 4.5em;width: 9em; margin-top: .5em;font-size: .9em;margin-right: 0.9em;}
+     .img_btn a:nth-child(2) span{display: block;margin-top: -4.5em;}
+     .img-src{color: white;text-align: center;}
+     .img_btn input{ display: block;border: none;margin-top: 4em;margin-left: 1.5em;border: red;height: 1.5em;width: 7em;}
+
+/*选择封面 二级页面  结束 男孩版*/
+
+
+/*拍摄封面 男孩版 */
+     .vid{text-align: center;width: 100%;}
+     #video{width: 22em;height: 10em;margin-left:-2.4em; margin-top: .3em;}
+     /*.can{width: 4em;height: 6em;}*/
+     #canvas{width: 4em;height: 4em;margin-left: 2em;}
+
+/*拍摄封面 男孩版 */
+
+/*导读页面 开始 男孩版 */
+
+    .introduct_content .fm_infoinner1{border-radius: .6em;margin: 0 auto;padding-left: 1em;background-color:transparent;}
+    .fm_infoinner1_intro{padding-left: 0;width: 94%;margin: 0 auto;}
+    .fm_infoinner1_1intro{padding-left: 0;}
+    .introduct_con{padding-top: .5em;height: 39.65em}
+
+    .bookimg_int{margin-left: 0em;}
+    .img-right{margin-left: 1.3em;}
+    .img-right img{max-width: 160px;}
+    .img-right p{display: block;width: 10em;margin-top: .3em;padding-left: .3em;color:#215498 ;}
+    .img-right p:nth-child(1){color: white;height: 1.6em;line-height:1.6em;margin-bottom: .6em;font-size: 1.2em;background: linear-gradient(to right,#346FBC 50%,#9AD4FF 80%);}
+    .introduct_middle{margin-top: 0.5rem;background: url("../images/record-boy/intorductcont.png");background-size: 100% 100%;padding-bottom: 0.6em;}
+
+    .introduct_middle .little{position: relative;top:0em;left:1em;z-index: 10;text-align: center;;display: inline-block;background: url("../images/record-boy/boy_bookbtnleft.png")no-repeat;background-size: contain;width: 5em;height: 1.7em;}
+    .introduct_middle .little span{letter-spacing: 0em;display: inline-block;line-height: 1.7em;font-size: .95em;height: 1.5em;margin-top: -0em;margin-left: -.25em;}
+    .intro_innercon{padding-top: 0 ;width: 93% ;max-height: 25.3em; overflow: auto;overflow-X:hidden;margin: 0 auto;margin-bottom: 1.5em;border-radius: 1.2em;margin-top: .9em;;margin-left: 0.5em;}
+    .intr_video{text-align: center}
+     .intr_videoa{width:5em ;height:5em;margin: 0 auto}
+     .intr_videoa video{width:5em ;height:5em;margin-top: -1em;border: 1px solid red;}
+
+    .intro_inner{padding-bottom: .5em; font-size:.89em;padding-left: .7em;padding-right:0em;width:94%;border-radius: .7em;background-color:#6CB4F1;border: 1px groove;margin:-.5em .3em; padding-top: 1.1em;margin-top: -.9em;margin-bottom: .5em}
+
+    .tro_line{height: .8em;border-bottom: .1em solid #367FBC;}
+    .intro_innerword{width: 98%;margin: 0 auto;font-size: 1.05em}
+    .introduction-audio{;height: 2.6em;line-height: 2.6em;;width: 100%;margin-top: .5em;}
+    .intro_audio{color: #3E80C8;display: inline-block;height: 2em;line-height:2em;border-radius: .5em;background-color: #B7E3FD;width: 94%;margin: 0em auto;padding-left: 1em;}
+     .intro_audio .audiob{display: inline-block;background: url("../images/record-boy/b_dlaba.png")no-repeat;background-size: 100% 100%;width: 2em;height: 1.5em;vertical-align: text-top;}
+    /*.intro_audio img{display: inline-block;vertical-align: text-bottom;margin-right: .8em;}*/
+    .intro_audio a{margin-right: .8em;font-size: .9em;color:#3E80C8 ;}
+    .intro_audio span{display: inline-block;font-size: 1.1em}
+    .footer_intro  {position: fixed;bottom:1rem;}
+
+/*导读页面 结束* 男孩版/
+
+
+/*导读页面 开始 女孩版 */
+
+     .introduct_content-g .fm_infoinner1-g {border-radius: .6em;margin: 0 auto;padding-left: 1em;background-color:transparent;}
+     .fm_infoinner1_intro-g {padding-left: 0;width: 94%;margin: 0 auto;}
+     .fm_infoinner1_1intro-g {padding-left: 0;}
+     .introduct_con-g {padding-top: .5em;height: 39.65em}
+
+
+     .bookimg_int-g{margin-top: 1em;margin-bottom: .8em}
+     .fm_infoinner1-g .bookimg_int-g {text-align:center;margin-left: 0em;line-height: 6em;width: 6em;  height: 6em;border:.1em groove ;border-color: white;border-radius: .7em;background-color: #f8afa5; }
+     .bookimg_int-g img{width: 4em;vertical-align: middle;;}
+
+     .img-right-g {margin-left: 1em;margin-top: 1em}
+     .img-right-g  img{max-width: 160px;}
+     .img-right-g  p{display: block;width: 10em;margin-top: .3em;padding-left: .3em;color:#F37075 ;}
+     .img-right-g  p:nth-child(1){color: white;height: 1.6em;line-height:1.6em;margin-bottom: .6em;font-size: 1.2em;background: linear-gradient(to right,#F37075 40%,#FEE1D9 80%);}
+     .introduct_middle-g {margin-top: 0.5rem;background: url("../images/record-girl/girlintro_content.png");background-size: 100% 100%;height: 23em;color: #CD4A4F}
+
+     .introduct_middle-g  .little-g {position: relative;top:.5em;left:1em;z-index: 10;text-align: center;margin-top:-.5em;display: inline-block;background: url("../images/record-girl/girl_bookleftbtn.png")no-repeat;background-size: contain;width: 5em;height: 1.7em;}
+     .introduct_middle-g  .little span{word-spacing: .2em;display: inline-block;line-height: 1.5em;font-size: .9em;margin-top: 0.2em;margin-left: -.2em;}
+     .intro_innercon-g {padding-top: 0 ;width: 93% ;max-height: 20.3em; overflow: auto;margin: 0 auto;margin-bottom: 2em;border-radius: .8em;margin-top: 1.2em}
+
+     /*滚动条*/
+     .intro_innercon-g{scrollbar-face-color: #f37075;scrollbar-track-color:#fbcfc5;}
+     .intro_innercon-g::-webkit-scrollbar-thumb{background-color: #f37075;}
+     .intro_innercon-g::-webkit-scrollbar-track-piece{background-color: #f8afa5  }
+
+     .intro_inner-g {margin-top: -.5em;padding-bottom: .5em; font-size:.89em;padding-left: .7em;padding-right:0em;width:92%;border-radius: .7em;background-color: #fbcfc5;border: 1px groove;margin-left:.4em; padding-top: 1.1em;}
+
+     .tro_line-g {height: .8em;border-bottom: .1em solid #f49e98;}
+     .intro_innerword-g {width: 98%;margin: 0 auto;font-size: 1.1em}
+     .introduction-audio-g {;height: 2.6em;line-height: 2.6em;;width: 100%;margin-top: .5em;}
+     .intro_audio-g {color: #CD4A4F;display: inline-block;height: 2em;line-height:2em;border-radius: .5em;background-color: #FFE5E1;width: 94%;margin: 0em auto;padding-left: 1em;}
+     .intro_audio-g  img{display: inline-block;width: 2em;vertical-align: text-bottom;margin-right: .8em;}
+     .intro_audio-g  small{margin-right: .8em;font-size: .9em;}
+     .intro_audio-g  span{display: inline-block;font-size: 1.1em}
+     .footer_intro   {position: fixed;bottom:1rem;}
+     .footer_intro-g {position: fixed;margin-left: 1.5em;bottom:1em; }
+     .footer_intro-g   a:nth-child(1){background: url("../images/record-girl/girlsuccsee_btnl.png");background-size: 5.1em 2.8em;width: 5.1em;height: 2.8em;margin-left: 0.8em;}
+     .footer_intro-g   a:nth-child(1) span{display: inline-block;height: 1.5em;margin-top: .6em}
+
+/*导读页面 结束* 女孩版/
+
+
+
+/*左侧侧边栏 菜单 开始* 男孩版*/
+
+    .menuleft{;color: white;width: 45%;background-color: #3280D0;height: 100%;text-align: center;position: absolute;top: 3.7em;z-index: 1000}
+    .menuleft li{height:5em ;font-size: 1.1em;line-height:5em;border: 1px solid #468FDA;}
+    .bac{background: linear-gradient(to right,#468FDA 8%,#65D6C1 98%,white 100%);}
+
+/*左侧侧边栏 菜单 结束* 男孩版*/
+
+

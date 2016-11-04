@@ -1,0 +1,124 @@
+.common-sprite, .common-aTitleBgBot, .common-atitleBgshadow, .common-headPortrait, .common-heartLevel, .common-hollowStart, .common-levelredBot, .common-monthBgLf, .common-monthBgPp, .common-monthBgRt, .common-retrunBtn, .common-solidStar, .common-yearTabBgLf, .common-yearTabBgPp, .common-yearTabBgRt, .common-yearTabBtnBlueCn, .common-yearTabBtnBlueLf, .common-yearTabBtnBlueRt, .common-yearTabBtnYellowCn, .common-yearTabBtnYellowLf, .common-yearTabBtnYellowRt {
+  background-image: url('../images/common-s2da9018c22.png');
+  background-repeat: no-repeat;
+}
+
+.common-aTitleBgBot {
+  background-position: 0 0;
+  height: 11px;
+  width: 34px;
+}
+
+.common-atitleBgshadow {
+  background-position: 0 -21px;
+  height: 63px;
+  width: 720px;
+}
+
+.common-headPortrait {
+  background-position: 0 -94px;
+  height: 338px;
+  width: 321px;
+}
+
+.common-heartLevel {
+  background-position: 0 -442px;
+  height: 56px;
+  width: 67px;
+}
+
+.common-hollowStart {
+  background-position: 0 -508px;
+  height: 48px;
+  width: 48px;
+}
+
+.common-levelredBot {
+  background-position: 0 -566px;
+  height: 23px;
+  width: 24px;
+}
+
+.common-monthBgLf {
+  background-position: 0 -599px;
+  height: 80px;
+  width: 29px;
+}
+
+.common-monthBgPp {
+  background-position: 0 -689px;
+  height: 80px;
+  width: 3px;
+}
+
+.common-monthBgRt {
+  background-position: 0 -779px;
+  height: 80px;
+  width: 31px;
+}
+
+.common-retrunBtn {
+  background-position: 0 -869px;
+  height: 110px;
+  width: 120px;
+}
+
+.common-solidStar {
+  background-position: 0 -989px;
+  height: 48px;
+  width: 48px;
+}
+
+.common-yearTabBgLf {
+  background-position: 0 -1047px;
+  height: 171px;
+  width: 40px;
+}
+
+.common-yearTabBgPp {
+  background-position: 0 -1228px;
+  height: 172px;
+  width: 1px;
+}
+
+.common-yearTabBgRt {
+  background-position: 0 -1410px;
+  height: 172px;
+  width: 37px;
+}
+
+.common-yearTabBtnBlueCn {
+  background-position: 0 -1592px;
+  height: 122px;
+  width: 1px;
+}
+
+.common-yearTabBtnBlueLf {
+  background-position: 0 -1724px;
+  height: 122px;
+  width: 42px;
+}
+
+.common-yearTabBtnBlueRt {
+  background-position: 0 -1856px;
+  height: 122px;
+  width: 46px;
+}
+
+.common-yearTabBtnYellowCn {
+  background-position: 0 -1988px;
+  height: 122px;
+  width: 1px;
+}
+
+.common-yearTabBtnYellowLf {
+  background-position: 0 -2120px;
+  height: 122px;
+  width: 42px;
+}
+
+.common-yearTabBtnYellowRt {
+  background-position: 0 -2252px;
+  height: 122px;
+  width: 46px;
+}
